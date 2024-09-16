@@ -1,0 +1,49 @@
+body {
+    background: black;
+    padding: 50px;
+    margin: 54px;
+  }
+  
+  .mainClass{
+    margin: 50px;
+    border: 1px solid rgb(90, 222, 231);
+    padding: 50px;
+    background: rgb(101, 205, 219);
+    height: 300px;
+    
+  }
+  header {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 50%;
+  }
+  
+  input, button {
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #taskList {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
