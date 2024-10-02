@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime, Even, Odd Numbers</title>
+  <style>
+    #colorBox {
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px; 
+    }
+    .number {
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid black;
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="colorBox"></div>
+
+  <script>
+    const data = document.querySelector('#colorBox');
+
+    // Helper function to check if a number is prime
+    function isPrime(num) {
+      if (num <= 1) return false; // 0 and 1 are not prime
+      for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+      }
+      return true;
+    }
+    for(i=0;i<=100; i++){
+      const numberDiv = document.createElement('div');
+       numberDiv.classList.add('number');
+       numberDiv.textContent=i;
+
+       if (isPrime(i)) {
+        numberDiv.style.backgroundColor = 'blue';
+      }
+      
+      else if (i % 2 === 0) {
+        numberDiv.style.backgroundColor = 'green';
+      }
+      
+      else {
+        numberDiv.style.backgroundColor = 'yellow';
+      }
+
+      data.appendChild(numberDiv)
+    }
+    
+  </script>
+
+</body>
+</html>
