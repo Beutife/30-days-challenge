@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet Weight Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Planet Weight Calculator</h1>
+    <div class="form-group">
+      <label for="mass">Enter mass of the object (kg):</label>
+      <input type="number" id="mass" min="1" placeholder="e.g. 50">
+    </div>
+    <div class="form-group">
+      <label for="planet">Choose a planet:</label>
+      <select id="planet">
+        <option value="9.81">Earth</option>
+        <option value="3.71">Mars</option>
+        <option value="24.79">Jupiter</option>
+        <option value="1.62">Moon</option>
+      </select>
+    </div>
+    <button id="calculateBtn">Calculate Weight</button>
+
+    <div class="result">
+      <p id="resultText">Your weight on this planet is: <span id="weightResult">0</span> N</p>
+    </div>
+
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

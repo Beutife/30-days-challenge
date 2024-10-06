@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .numbers{
+      padding:5px;
+      margin: 5px;
+      border: 1px solid black;
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      font-family: Arial, sans-serif;
+    }
+    #number{
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+        margin: 20px;
+        padding: 20px;
+    }
+</style>
+<body>
+    <div>
+        <input type="search" placeholder="generate number">
+        <button type="submit" id="btn">Generate number</button>
+    </div>
+    <div id="number"></div>
+    <script src="script.js"></script>
+</body>
+</html>
