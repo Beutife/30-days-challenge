@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background: rgb(170, 145, 170);
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    word-spacing: 3px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: 'Playwrite GB S';
+}
+
+
+/*Home*/
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+    padding: 100px;
+}
+.home h1{
+    font-size: xx-large;
+}
+img{
+    width: 200px;
+    border-radius: 10px;
+    height: 200px;
+    position: relative;
+    top: 150px;
+    left: 200px;
+    z-index: 1000;
+}
+
+main{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    background-color: #F2F5F9;
+    justify-content: space-between;
+}
+
+.work-section{
+   position: absolute;
+   background:white ;
+   width: 300px;
+   height: 660px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   left: 110px;
+   top: 235px;
+   margin: 100px;
+}
+
+.work-section h2{
+    padding-top: 0px;
+    margin-bottom: -10px;
+}
+
+.info-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 100px;
+}
+.nav-bar{
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+button{
+    background: linear-gradient(to right, #FF9C1A, #EC1B09);
+    padding: 20px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    width: 200px;
+    margin-top: 50px;
+}
+button:hover{
+    color: rgb(222, 193, 87);
+}
+button a{
+    text-decoration: none;
+    color: #000;
+}
+.show-grid  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px ;
+    gap: 20px;
+}
+.show-grid div{
+    background: rgb(240, 236, 161);
+    padding: 10px;
+    border-radius: 5px;
+    height: 150px;
+    margin-top: 0px;
+}
+.icons{
+    gap: 0.5rem;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.icons a{
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #F2F5F9;
+}
+.iocns a:hover{
+    background: linear-gradient(to right, #FF9C1A, #EC1B09);
+    color: white;
+}
+.icons a i{
+    color: black;
+    font-size: large;
+
+}
+.nav-links{
+    background: white;
+    margin-left: 130px;
+    width: 450px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px 5px rgba(210, 178, 178, 0.3);
+    border-radius: 10px;
+}
+.nav-links .resume{
+    background: #F2F5F9;
+    padding: 10px;
+    width: 50px;
+    border-radius: 5px;
+}
+.nav-links .resume a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links .resume:hover{
+    background: linear-gradient(to right, #FF9C1A, #EC1B09);
+    color: white;
+}
+.aboutme{
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+#contact1{
+    background: #F2F5F9;
+    padding: 40px;
+    width: 180px;
+    margin: 20px;
+    border-radius: 5px;
+}
+.phone1{
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    gap: 1rem;
+    border-bottom: 1px solid grey;
+    padding: 4px;
+}
+.phone1 a {
+   color: linear-gradient(to right, #FF9C1A, #EC1B09);
+}
+.show-grid .t-color{
+    background: #F2F5F9;
+}

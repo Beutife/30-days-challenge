@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Countries Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heading">
+        <h1>World Countries Data</h1>
+        <p>Currently, there are 250 countries in the world</p>
+    </div>
+
+    <div class="content">   
+        <div class="button-section">
+            <button id="btnPop" class="btn">Population</button>
+            <p id="pop" class="description">10 most populated countries in the world</p> 
+        </div>
+        <div class="button-section">
+            <button id="btnLang" class="btn">Languages</button>
+            <p id="lang" class="description">10 countries with the most spoken languages</p>
+        </div>  
+    </div>
+
+    <div id="chartContainer">
+        <canvas id="myBarChart" ></canvas>
+    </div>
+
+    <div id="dataId"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

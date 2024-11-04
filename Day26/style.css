@@ -1,0 +1,18 @@
+.countryContaine{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 20px;
+    padding: 20px;
+}
+#container{
+    background: url('./assets/image.png');
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(37, 27, 13);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
